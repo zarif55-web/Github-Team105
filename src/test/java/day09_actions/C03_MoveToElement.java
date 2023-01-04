@@ -5,8 +5,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 public class C03_MoveToElement extends TestBase {
 
@@ -20,7 +20,7 @@ public class C03_MoveToElement extends TestBase {
         WebElement beklenecekElement= driver.findElement(By.id("nav-link-accountList"));
         Actions actions = new Actions(driver);
         actions.moveToElement(beklenecekElement).perform();
-        ReusableMethods.bekle(5);
+        ReusabelMethods.bekle(5);
 
         //3- “Create a list” butonuna basin
 

@@ -5,8 +5,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 import java.util.Set;
 
@@ -22,7 +22,7 @@ public class C01_MouseActions extends TestBase {
         WebElement ciziliAlanElementi= driver.findElement(By.xpath("//*[@id='hot-spot']"));
 
         actions.contextClick(ciziliAlanElementi).perform();
-        ReusableMethods.bekle(2);
+        ReusabelMethods.bekle(2);
 
         //4- Alert’te cikan yazinin “You selected a context menu” oldugunu test edin.
         String expectedAlertYazisi="You selected a context menu";
@@ -58,6 +58,6 @@ public class C01_MouseActions extends TestBase {
 
         Assert.assertEquals(expectedYenisayfaYazi,actualYeniSayfaYazi);
 
-        ReusableMethods.bekle(5);
+        ReusabelMethods.bekle(5);
     }
 }

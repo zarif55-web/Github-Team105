@@ -3,8 +3,8 @@ package day10_FileTests;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -19,7 +19,7 @@ public class C02_FileDownloadTesti extends TestBase {
 
         //3. Facebookd.png dosyasını indirelim
         driver.findElement(By.xpath("//a[text()='Facebookd.png']")).click();
-        ReusableMethods.bekle(5);
+        ReusabelMethods.bekle(5);
         //4. Dosyanın başarıyla indirilip indirilmediğini test edelim
 
         // Test icin oncelikle dosyanin indirildiginde dosyaYolu ne olacak bunu olusturmaliyiz

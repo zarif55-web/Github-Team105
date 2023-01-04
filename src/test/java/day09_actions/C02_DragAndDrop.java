@@ -5,8 +5,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 public class C02_DragAndDrop extends TestBase {
 
@@ -23,7 +23,7 @@ public class C02_DragAndDrop extends TestBase {
 
         actions.dragAndDrop(dragMeElementi,birakilacakAlanElementi).perform();
 
-        ReusableMethods.bekle(3);
+        ReusabelMethods.bekle(3);
 
         //3- “Drop here” yazisi yerine “Dropped!” oldugunu test edin
 

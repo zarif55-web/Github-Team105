@@ -4,8 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 public class C03_FileUploadTesti extends TestBase {
 
@@ -45,6 +46,6 @@ public class C03_FileUploadTesti extends TestBase {
         WebElement fileUploadedElementi= driver.findElement(By.tagName("h3"));
         Assert.assertTrue(fileUploadedElementi.isDisplayed());
 
-        ReusableMethods.bekle(3);
+        ReusabelMethods.bekle(3);
     }
 }
