@@ -1,4 +1,4 @@
-package TekrarTest02;
+package tekrarTest02;
 
 import org.junit.Test;
 import org.openqa.selenium.By;

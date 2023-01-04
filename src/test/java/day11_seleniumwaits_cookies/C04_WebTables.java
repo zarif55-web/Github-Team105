@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import utilities.ReusableMethods;
-import utilities.TestBase;
+import utitlities.ReusabelMethods;
+import utitlities.TestBase;
 
 import java.util.List;
 
@@ -59,7 +59,7 @@ public class C04_WebTables extends TestBase {
         WebElement istenenDataElementi= getElement(5,7);
         System.out.println(istenenDataElementi.getText());
 
-        ReusableMethods.bekle(5);
+        ReusabelMethods.bekle(5);
     }
 
     private WebElement getElement(int satir, int sutun) {
