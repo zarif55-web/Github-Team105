@@ -1,5 +1,6 @@
 package tekrarTest02;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -25,9 +26,14 @@ public class Test01_ActionsClassHomework extends TestBase {
         driver.findElement(By.xpath("(//a[@class='list-alert'])[1]")).click();
         ReusabelMethods.bekle(2);
 
-        //4- Popup mesajini yazdirin
+        //4- Popup mesajini yazdirin(yazdıramadım ama o yazıyı icerdigini test etmis oldum)
+        String expectedAlertYazisi="Well done you clicked on the link!";
+        String actualAlertYazisi=driver.switchTo().alert().getText();
+
+        Assert.assertEquals(expectedAlertYazisi,actualAlertYazisi);
 
         //5- Popup'i tamam diyerek kapatin
+        driver.switchTo().alert().accept();
 
         //6- “Click and hold" kutusuna basili tutun
         WebElement clickKutusu=driver.findElement(By.xpath("(//div[@class='col-lg-12 text-center'])[3]"));
