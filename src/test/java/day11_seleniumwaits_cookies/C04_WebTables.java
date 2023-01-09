@@ -25,7 +25,7 @@ public class C04_WebTables extends TestBase {
 
         WebElement tumBody= driver.findElement(By.xpath("//tbody"));
 
-        //4.Web table’daki satir sayisinin 9 oldugunu test edin
+        //4.Web table’daki satir sayisinin 10 oldugunu test edin
 
         List<WebElement> satirlarListesi= driver.findElements(By.xpath("//tbody/tr"));
         Assert.assertEquals(10,satirlarListesi.size());
